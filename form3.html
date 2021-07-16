@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop Css</title>
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="/Subscribe " method="post" id="singup" name="form"></form>
+        <table>
+            <tr>
+                <td>
+                    <h1>Register</h1>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td><input id="fname" type="text" placeholder="Input First Name"></td>
+            </tr>
+            <tr>
+                <td><input id="lname" type="text" placeholder="Input Last Name"></td>
+            </tr>
+            <tr>
+                <td><input id="username" type="text" placeholder="Input User Name"></td>
+            </tr>
+            <tr>
+                <td><input id="password" type="password" placeholder="Input Password"></td>
+            </tr>
+            <tr>
+                <td><input id="email" type="email" placeholder="Input Email"></td>
+            </tr>
+            <tr>
+                <td><input id="submit" type="submit" placeholder="Input Email" value="Submit"></td>
+            </tr>
+
+
+
+        </table>
+        </form>
+
+
+    </div>
+    <script>
+        document.getElementById("submit").addEventListener("click", function(event) {
+
+            let fname = document.getElementById("fname").value
+            let lname = document.getElementById("lname").value
+            let username = document.getElementById("username").value
+            let pass = document.getElementById("password").value
+            let email = document.getElementById("email").value
+            if (!fname) {
+                fname = ('กรุณากรอก Fisrtname')
+
+            }
+            if (!lname) {
+                lname = ('กรุณากรอก Lastname')
+            }
+            if (!username) {
+                username = ('กรุณากรอก Username')
+            }
+            if (!pass) {
+                pass = ('กรุณากรอก Password')
+            }
+            if (!email) {
+                email = ('กรุณากรอก Email')
+            }
+
+
+
+            alert(` Firstname = ${fname}\n Lastname = ${lname}\n Username = ${username}\n Password = ${pass}\n Email = ${email} `)
+
+
+
+        })
+    </script>
+</body>
+
+</html>
